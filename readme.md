@@ -20,13 +20,13 @@ tcc-test/
 
 1. Clone the repository:
     ```bash
-    git clone <repository-url>
+    git clone https://github.com/RikiNozomu/tcc-test.git
     cd tcc-test
     ```
 
 2. Start the application using Docker Compose:
     ```bash
-    docker-compose up --build
+    docker-compose up --build -d
     ```
 
 3. Access the application:
