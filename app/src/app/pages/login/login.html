@@ -1,0 +1,23 @@
+<div class="min-w-screen min-h-screen flex flex-col items-center justify-center px-5 py-5">
+  <div class="login-box">
+    <form [formGroup]="loginForm" class="flex flex-col items-center gap-8" (submit)="onLogin()">
+      <div class="flex flex-row gap-2 items-center">
+        <label class="w-18 text-right" for="user">User</label>
+        <input class="flex-1" type="text" pInputText formControlName="username" name="username" />
+      </div>
+
+      <div class="flex flex-row gap-2 items-center">
+        <label class="w-18 text-right" for="password">Password</label>
+        <p-password class="flex-1" formControlName="password" name="password" />
+      </div>
+
+      <div class="flex flex-row gap-2 items-center w-full pl-20">
+        <p-button class="col-span-4" label="ลงชื่อเข้าใช้งาน" name="submit" type="submit" />
+      </div>
+
+      <div class="flex flex-row gap-2 items-center w-full pl-20">
+        <a class="underline text-blue-400" routerLink="/sign-up">สมัครสมาชิก</a>
+      </div>
+    </form>
+  </div>
+</div>

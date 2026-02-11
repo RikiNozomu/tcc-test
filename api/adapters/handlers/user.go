@@ -73,8 +73,11 @@ func (h *UserHandler) GetMe(c *gin.Context) {
 		return
 	}
 
-	c.JSON(http.StatusFound, gin.H{
-		"data": user,
+	c.JSON(http.StatusOK, UserResponse{
+		ID:        user.ID,
+		Username:  user.Username,
+		CreatedAt: user.CreatedAt,
+		UpdatedAt: user.UpdatedAt,
 	})
 }
 
